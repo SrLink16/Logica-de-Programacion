@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE LA FIFA</h1>
+
+<br>
+<br>
+
+<script>
+
+
+	function saltarLinea() {
+		
+		document.write("<br>");
+		document.write("<br>");
+	
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+    
+    var aMun = 1930;
+    var lim = parseInt(prompt("Ingrese el año limite para calcular"))
+    while (aMun <= lim){
+
+        
+        imprimir("Hubo mundial de la FIFA en el año " + aMun);
+        aMun = aMun + 4;
+    }
+    imprimir("Fin");
+
+
+    
+    
+
+
+	
+
+</script>

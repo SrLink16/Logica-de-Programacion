@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA Tabla de multiplicar</h1>
+
+<br>
+<br>
+
+<script>
+
+
+	function saltarLinea() {
+		
+		document.write("<br>");
+		document.write("<br>");
+	
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+    
+    imprimir("While");
+    var Mul = 1
+    while (Mul <= 10){
+
+        imprimir(5 * Mul);
+        Mul = Mul + 1;
+    }
+
+    imprimir("For");
+
+    for(var Mul=1;Mul<=10;Mul++){
+
+        imprimir(5 * Mul);
+
+    }
+	
+
+</script>

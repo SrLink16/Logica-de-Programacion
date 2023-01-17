@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas>
+
+
+<script>
+    function dibCua(x,y,color) {
+
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        //Cuadrado
+        pincel.fillStyle = color;
+        pincel.fillRect(x,y,50,50);
+        //Borde Negro
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x,y,50,50);
+
+    }
+
+    /*
+    var x = 0;
+    var cont = 1;
+    while (x < 600){
+
+        dibCua(x,0,"red");
+        dibCua(x,50,"yellow");
+        dibCua(x,100,"green");
+
+        x = x + 50;
+
+
+    }
+    */
+
+    for (x=0; x < 600; x = x + 50){
+
+        dibCua(x,0,"red");
+        dibCua(x,50,"yellow");
+        dibCua(x,100,"green");
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>

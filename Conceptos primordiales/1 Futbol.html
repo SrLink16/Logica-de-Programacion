@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA FUTBOL MARCADOR</h1>
+
+<br>
+<br>
+
+<script>
+
+
+	function saltarLinea() {
+		
+		document.write("<br>");
+		document.write("<br>");
+	
+	}
+
+	//Esta funcion espera un parametro de entrada (frase) en function
+	//Se puede llamar funciones dentro de otras
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+	var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+	var empates = parseInt(prompt("Informe la cantidad de empates"));
+
+
+	pFinal = (victorias * 3) + empates;
+
+	imprimir("El total de puntos del equipo es: " + pFinal)
+
+</script>

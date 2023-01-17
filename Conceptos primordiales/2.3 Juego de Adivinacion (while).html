@@ -1,0 +1,64 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACIÓN</h1>
+
+<br>
+<br>
+
+<script>
+
+
+	function saltarLinea() {
+		
+		document.write("<br>");
+		document.write("<br>");
+	
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+	}
+    
+    var numSis = Math.round(Math.random()*10);
+    var inten = 3;
+    
+    var cont = 1;
+    while (cont <= inten) {
+
+        var numLan = parseInt(prompt("Ingrese un número entre 0 y 10"));
+        if (numSis == numLan){
+
+            alert("acertó en el intento " + cont + " el numero pensado era " + numSis);
+            break;
+        }
+
+        //if (numSis != numLan){
+
+        //  imprimir("Usted erró, el número pensado era: " + numSis);
+
+        //}
+        else{
+
+            alert("Usted erró");
+        }
+
+        cont++;
+    }
+	
+    if (numSis == numLan){
+
+        imprimir("acertó en el intento " + cont + " el numero pensado era " + numSis);
+
+    }
+
+    else{
+
+        imprimir("Usted erró, el numero era: " + numSis);
+
+    }
+
+    imprimir("fin");
+
+</script>
