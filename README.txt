@@ -1,6 +1,7 @@
 awita de coco uwu 
 Holoo
 awita de coco uwu owo
+Jorge Morales
 muriel rivas esquivela
 Oscar Orlando
 oscaruriel
